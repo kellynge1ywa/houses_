@@ -1,0 +1,35 @@
+<div>
+    <navbar> </navbar>
+    <div class="">
+        <div class="flex items-centre justify-centre" *ngIf="propertyDetails">
+            <div>
+                <img [src]="propertyDetails.Image" alt="">
+            </div>
+            <div>
+                <div>
+                    <h2>{{propertyDetails.Title}}</h2>
+                </div>
+                <div>
+                    <h2>{{propertyDetails.Price}}</h2>
+                </div>
+                <div>
+                    <h3>{{propertyDetails.Location}}</h3>
+                </div>
+                <div>
+                    <h3>{{propertyDetails.PropertyType}}</h3>
+                </div>
+                <div>
+                    <h3>{{propertyDetails.Parking}}</h3>
+                </div>
+                <div>
+                    <h3>{{propertyDetails.Wifi}}</h3>
+                </div>
+                <div>
+                    <h3>{{propertyDetails.AvailableUnits}}</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

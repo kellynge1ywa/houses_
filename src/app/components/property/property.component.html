@@ -1,0 +1,28 @@
+<div>
+    <navbar></navbar>
+    <div>
+        <button class="bg-slate-500 text-white rounded-[0.2em]" (click)="goToAddProperty()">Add Property</button>
+        <div class="flex flex-wrap gap-[0.8em] items-center justify-center">
+            <div class="bg-gray-500 rounded-[0.4em] pb-1" *ngFor="let property of AllProperty">
+                <div >
+                    <img class="rounded-t-[0.4em] h-[10em] w-[15em]" [src]="property.Image" alt="">
+                </div>
+                <div class="px-1 py-1">
+                    <h2>{{property.Title}}</h2>
+                    <h3>{{property.PropertyType}}</h3>
+                    <h3>{{property.Location}}</h3>
+                    <h2>{{property.Price}}</h2>
+                </div>
+                <div>
+                    <a [routerLink]="['/property/details',property.Id]" class="bg-orange-700 p-1 rounded-[0.2em] ml-[0.4em]">View more</a >
+                        <!-- <a (click)="goToDetails(property.Id)">></a> -->
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+</div>
+
+
